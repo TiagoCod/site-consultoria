@@ -56,16 +56,14 @@ nav a:hover{
     border-color: #eba210;
 }
 main{
-    display: grid;
-    grid-template-columns: auto 90% auto;
+    display: flex;
+    flex-flow: column wrap;
 
-    width: 104%;
-    height: 100%;
+    width: 100%;
 }
 section#hero{
     padding: 10px;
     width: 100%;
-    grid-area: 1 / 1 / 2 / 2;
 }
 section#hero div.conteudo-hero h1{
     font-family: var(--fonte-titulo);
@@ -102,13 +100,10 @@ section#hero .mais h2{
     color: var(--dourado);
 }
 section#descricao{
-    display: grid;
-    grid-area: 2 / 1 / 2 / 2;
-    
-
-    height: 100vh;
-    width: 100vw;
+    padding: 10px;
+    width: 100%;
     border-top: 1px solid #585a59;
+    border-bottom: 1px solid #585a59;
     background-color: var(--fundo-cinza);
 }
 div.conteudo{
@@ -123,3 +118,62 @@ div.conteudo h3{
 div.conteudo p{
     font-size: 0.9em;
 }
+section#funciona{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+div.inicio{
+    flex: 1 1 100%;
+    text-indent: 20px;
+    margin-bottom: 5px;
+}
+section#funciona .processo{
+    flex: 0 1 250px;
+    padding: 5px;
+    border: 2px solid #585a59;
+}
+.processo h6{
+    color: var(--dourado);
+    padding-bottom: 5px;
+}
+.processo p{
+    margin: 5px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+}
+section#depoimento{
+    display: flex;
+    flex-flow: column wrap;
+
+    background-color: var(--fundo-cinza);
+    padding: 20px;
+}
+div.dp{
+    flex: 0 1 80px;
+}
+div.dp p{
+    font-size: 0.8em;
+}
+div.dp q{
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 1.3em;
+}
+section#depoimento div.final{
+    padding: 10px 0 10xp 10px;
+}
+div.final h3{
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+
+
+
+
