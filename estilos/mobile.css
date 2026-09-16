@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-titulo: 'Zilla Slab', Helvetica, Arial, sans-serif;
+    --fonte-texto: 'Work Sans', Helvetica, Arial, sans-serif;
+
+    --fundo-escuro:#1F3A3D;
+    --fundo-escuro2: #16292B;
+    --fundo-claro: #F7F4EC;
+    --linhas: #d8cfbb7e;
+    --dourado: #f8b93a;
+    --fundo-cinza: #383a39;
+}
+body{
+    text-align: justify;
+    font-family: var(--fonte-texto);
+    background-color: var(--fundo-escuro);
+    color: white;
+}
+p{
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    margin-bottom: 20px;
+     padding: 20px;
+    border-bottom: 2px solid var(--fundo-escuro2);
+    position: sticky;
+    top: 0;
+    background-color: var(--fundo-escuro);
+    z-index: 1;
+}
+header span{
+    color: var(--dourado);
+}
+nav a{
+    text-decoration: none;
+    color: var(--dourado);
+    border-radius: 3px;
+    padding: 5px;
+    border: 3px solid var(--dourado);
+    transition: color 0.5s, border-color 0.5s;
+}
+nav a:hover{
+    color: #eba210;
+    border-color: #eba210;
+}
+main{
+    display: grid;
+    grid-template-columns: auto 90% auto;
+
+    width: 104%;
+    height: 100%;
+}
+section#hero{
+    padding: 10px;
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+}
+section#hero div.conteudo-hero h1{
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+}
+section#hero .conteudo-hero{
+    height: 210px;
+    width: 100%;
+    border-bottom: 1px solid var(--linhas);
+}
+section#hero .conteudo-hero a{
+    text-decoration: none;
+    background-color: var(--dourado);
+    color: var(--fundo-escuro2);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+section#hero .conteudo-hero a:hover{
+    background-color: #db9b19;
+}
+section#hero h1{
+    padding-bottom: 10px;
+}
+section#hero .mais{
+   height: 100px;
+   width: 100%;
+   font-size: 0.8em;
+}
+section#hero .mais h2{
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    font-weight: 300;
+    color: var(--dourado);
+}
+section#descricao{
+    display: grid;
+    grid-area: 2 / 1 / 2 / 2;
+    
+
+    height: 100vh;
+    width: 100vw;
+    border-top: 1px solid #585a59;
+    background-color: var(--fundo-cinza);
+}
+div.conteudo{
+    padding: 8px;
+}
+div.conteudo h3{
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+div.conteudo p{
+    font-size: 0.9em;
+}
