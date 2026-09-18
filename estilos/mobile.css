@@ -70,7 +70,7 @@ section#hero div.conteudo-hero h1{
     font-weight: 700;
 }
 section#hero .conteudo-hero{
-    height: 210px;
+    min-height: 210px;
     width: 100%;
     border-bottom: 1px solid var(--linhas);
 }
@@ -180,6 +180,10 @@ div.final a{
     margin-top: 10px;
     padding: 8px;
     border-radius: 5px;
+}
+footer{
+    margin-top: 5px;
+    text-align: center;
 }
 
 
