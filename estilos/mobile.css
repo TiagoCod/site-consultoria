@@ -164,13 +164,22 @@ div.dp q{
     font-size: 1.3em;
 }
 section#depoimento div.final{
-    padding: 10px 0 10xp 10px;
+    padding: 10px 0 20xp 10px;
+    height: 80px;
 }
 div.final h3{
     font-family: var(--fonte-titulo);
     font-weight: 600;
-    font-size: 1.5em;
-    margin-bottom: 5px;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+div.final a{
+    text-decoration: none;
+    color: var(--fundo-escuro2);
+    background-color: var(--dourado);
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 
