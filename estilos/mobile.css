@@ -19,7 +19,7 @@
 body{
     text-align: justify;
     font-family: var(--fonte-texto);
-    background-color: var(--fundo-escuro);
+    background-color: var(--fundo-escuro2);
     color: white;
 }
 p{
@@ -56,21 +56,27 @@ nav a:hover{
     border-color: #eba210;
 }
 main{
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
+    grid-template-columns: 20px 90vw 20px;
 
     width: 100%;
+    transition: height 1s, width 1s;
+    margin-top: -20px;
+    transition-timing-function: ease;
+    background-color: var(--fundo-escuro);
 }
 section#hero{
     padding: 10px;
     width: 100%;
+    grid-column: 2 / -2;
+
 }
 section#hero div.conteudo-hero h1{
     font-family: var(--fonte-titulo);
     font-weight: 700;
 }
 section#hero .conteudo-hero{
-    min-height: 250px;
+    min-height: 300px;
     width: 100%;
     border-bottom: 1px solid var(--linhas);
     overflow: hidden;
@@ -107,6 +113,7 @@ section#descricao{
     border-top: 1px solid #585a59;
     border-bottom: 1px solid #585a59;
     background-color: var(--fundo-cinza);
+    grid-column: 2 / -2;
 }
 div.conteudo{
     padding: 8px;
@@ -127,6 +134,7 @@ section#funciona{
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
+    grid-column: 2 / -2;
 }
 div.inicio{
     flex: 1 1 100%;
@@ -150,6 +158,7 @@ section#funciona .processo{
 section#depoimento{
     display: flex;
     flex-flow: column wrap;
+    grid-column: 2 / -2;
 
     background-color: var(--fundo-cinza);
     padding: 20px;
@@ -167,7 +176,7 @@ div.dp q{
 }
 section#depoimento div.final{
     padding: 10px 0 20xp 10px;
-    height: 100px;
+    min-height: 150px;
     overflow: hidden;
 }
 div.final h3{
@@ -186,6 +195,26 @@ div.final a{
 footer{
     margin-top: 5px;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: 20px 90vw 20px;
+        height: 100%;
+    }
+    section#hero{
+        grid-column: 2 / -2;
+    }
+    section#descricao{
+        grid-column: 2 / -2;
+    }
+    section#funciona{
+        grid-column: 2 / -2;
+    }
+    section#depoimento{
+        grid-column: 2 / -2;
+    }
 }
 
 
