@@ -57,7 +57,7 @@ nav a:hover{
 }
 main{
     display: grid;
-    grid-template-columns: 20px 90vw 20px;
+    grid-template-columns: 1fr;
 
     width: 100%;
     transition: height 1s, width 1s;
@@ -69,14 +69,13 @@ section#hero{
     padding: 10px;
     width: 100%;
     grid-column: 2 / -2;
-
 }
 section#hero div.conteudo-hero h1{
     font-family: var(--fonte-titulo);
     font-weight: 700;
 }
 section#hero .conteudo-hero{
-    min-height: 300px;
+    min-height: 210px;
     width: 100%;
     border-bottom: 1px solid var(--linhas);
     overflow: hidden;
@@ -108,15 +107,18 @@ section#hero .mais h2{
     color: var(--dourado);
 }
 section#descricao{
-    padding: 10px;
+    padding: 0px 10px;
     width: 100%;
     border-top: 1px solid #585a59;
-    border-bottom: 1px solid #585a59;
     background-color: var(--fundo-cinza);
     grid-column: 2 / -2;
 }
-div.conteudo{
+section#descricao div.conteudo{
     padding: 8px;
+    border-bottom: 1px solid #565756;
+}
+section#descricao div.conteudo > span{
+    color: #ffaa00;
 }
 div.conteudo h3{
     font-family: var(--fonte-titulo);
@@ -216,6 +218,24 @@ footer{
         grid-column: 2 / -2;
     }
 }
+@media screen and (min-width: 992px) {
+    section#hero div.conteudo-hero{
+        min-height: 180px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    main{
+        justify-content: center;
+        align-content: center;
+    }
+    section#depoimento{
+        min-height: 250px;
+    }
+    section#hero div.conteudo-hero{
+        min-height: 160px;
+    }
+}
+
 
 
 
