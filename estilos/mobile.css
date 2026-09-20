@@ -204,7 +204,7 @@ div.final a:hover{
 footer{
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 5px;
     text-align: center;
