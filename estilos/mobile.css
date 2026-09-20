@@ -57,7 +57,7 @@ nav a:hover{
 }
 main{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 10px 90vw 10px;
 
     width: 100%;
     transition: height 1s, width 1s;
@@ -214,7 +214,7 @@ footer{
 @media screen and (min-width: 768px) {
     main{
         display: grid;
-        grid-template-columns: 20px 90vw 20px;
+        grid-template-columns: 10px 90vw 10px;
         height: 100%;
     }
     section#hero{
